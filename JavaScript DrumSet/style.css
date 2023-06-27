@@ -1,0 +1,87 @@
+body{
+  font-size: 10px;
+  background: #f06;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f06), to(#ff0)); /* Saf4+, Chrome, iOS 3.2-4.3, Android 2.1-3 */
+  background: -webkit-linear-gradient(top, #f06, #ff0); /* Chrome 10+, Saf5.1+, iOS 5+, Android 4+ */
+  background: -moz-linear-gradient(top, #f06, #ff0); /* FF3.6+ */
+  background: -o-linear-gradient(top, #f06, #ff0); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f06, #ff0); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f06', endColorstr='#ff0', GradientType=0); /* IE 5.5–7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f06', endColorstr='#ff0', GradientType=0)"; /* IE 8–9 */
+  background: linear-gradient(to bottom, #f06, #ff0); /* W3C */
+}
+
+html { min-height: 100%; }
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.keys {
+  display: grid;
+  height: auto;
+  width: fit-content;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 5rem;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+
+
+.key {
+  border-radius: 10px;
+  border: 1px solid rgb(31, 74, 181);
+  
+  margin: auto;
+  font-size: 1.5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.157);
+  text-shadow: 0 0 0.5rem black;
+  flex-direction: column;
+}
+
+.key:hover{
+  cursor: pointer;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #090b95;
+  box-shadow: 0 0 1rem #090b95;
+}
+
+kbd {
+  color: #EDDF40;
+  background-color: transparent;
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #EDDF40;
+}
+
+.title-area{
+  text-align: center;
+  padding: 50px 0 20px 0px;
+  color: #fff;
+}
+
+.drum-area{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
